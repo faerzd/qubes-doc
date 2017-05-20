@@ -74,7 +74,7 @@ This method is more involved than the one above, but has anti-leak features that
 
 2.  Set up and test the VPN client.
 
-    Make sure the VPN VM and its template VM are not running.
+    Make sure the Proxy VM is running and its template VM is not running.
     
     Run a terminal (CLI) in the VPN VM -- this will start the VM. Then make a new 'vpn' folder with `sudo mkdir /rw/config/vpn` and copy your VPN config files here (the example config filename used here is `openvpn-client.ovpn`). Files accompanying the main config such as *.crt and *.pem should also go here, and should not be referenced in the main config by absolute paths such as '/etc/...'.
 
